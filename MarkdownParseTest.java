@@ -151,14 +151,14 @@ public class MarkdownParseTest {
         assertEquals(linkTester, links);
     }
 
-    // @Test
-    // public void testGetLinks14() throws IOException{
-    //     ArrayList<String> linkTester = new ArrayList<>();
-    //     linkTester.add("something.com");
+    @Test
+    public void testGetLinks14() throws IOException{
+        ArrayList<String> linkTester = new ArrayList<>();
+        linkTester.add("something.com");
 
-    //     Path fileName = Path.of("test-file14.md");
-	//     String contents = Files.readString(fileName);
-    //     ArrayList<String> links = MarkdownParse.getLinks(contents);
-    //     assertEquals(linkTester, links);
-    // }
+        Path fileName = Path.of("test-file14.md");
+	    String contents = Files.readString(fileName);
+        ArrayList<String> links = MarkdownParse.getLinks(contents);
+        assertEquals(linkTester, links);
+    }
 }
