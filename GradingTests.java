@@ -9,7 +9,7 @@ import java.util.List;
 public class GradingTests {
     @Test
     public void testFile1() {
-        List<String> expect = List.of("");
+        List<String> expect = List.of();
         assertEquals(MarkdownParse.getLinks("[]()"), expect);
     }
     @Test
